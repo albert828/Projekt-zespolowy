@@ -1,0 +1,16 @@
+\babel@toc {polish}{}
+\contentsline {section}{\numberline {1}Opis projektu}{2}{section.1}% 
+\contentsline {section}{\numberline {2}Konfiguracja mikrokontrolera}{2}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Konfiguracja pin\IeC {\'o}w}{4}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}USART}{4}{subsection.2.2}% 
+\contentsline {section}{\numberline {3}Urz\IeC {\k a}dzenia zewn\IeC {\k e}trzne}{4}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Akcelerometr -- LSM303C}{4}{subsection.3.1}% 
+\contentsline {section}{\numberline {4}Projekt elektroniki}{5}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Czujniki}{5}{subsection.4.1}% 
+\contentsline {section}{\numberline {5}Konstrukcja mechaniczna}{5}{section.5}% 
+\contentsline {section}{\numberline {6}Opis dzia\IeC {\l }ania programu}{5}{section.6}% 
+\contentsline {section}{\numberline {7}Harmonogram pracy}{6}{section.7}% 
+\contentsline {subsection}{\numberline {7.1}Podzia\IeC {\l } pracy}{6}{subsection.7.1}% 
+\contentsline {section}{\numberline {8}Zadania niezrealizowane}{6}{section.8}% 
+\contentsline {section}{\numberline {9}Podsumowanie}{7}{section.9}% 
+\contentsline {section}{Bibilografia}{8}{section.9}% 
