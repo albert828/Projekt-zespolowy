@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.20)  3 MAR 2019 13:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.20)  4 MAR 2019 19:33
 entering extended mode
 **./sr_szablon_projekt.tex
 (sr_szablon_projekt.tex
@@ -928,47 +928,47 @@ le.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.244 
+l.245 
       pdfTeX warning (ext4): destination with the same identifier (name{table.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.244 
+l.245 
       pdfTeX warning (ext4): destination with the same identifier (name{table.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.244 
+l.245 
       ]
 File: figures/obraz.png Graphic file (type png)
 <use figures/obraz.png>
-Package pdftex.def Info: figures/obraz.png  used on input line 264.
+Package pdftex.def Info: figures/obraz.png  used on input line 265.
 (pdftex.def)             Requested size: 227.62206pt x 160.72089pt.
 File: figures/obraz.png Graphic file (type png)
 <use figures/obraz.png>
-Package pdftex.def Info: figures/obraz.png  used on input line 298.
+Package pdftex.def Info: figures/obraz.png  used on input line 299.
 (pdftex.def)             Requested size: 227.62206pt x 160.72089pt.
  [5pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.301 \end{figure}
+l.302 \end{figure}
                   pdfTeX warning (ext4): destination with the same identifier (
 name{figure.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.301 \end{figure}
+l.302 \end{figure}
                   ]
-Overfull \hbox (41.01898pt too wide) in paragraph at lines 318--338
+Overfull \hbox (41.01898pt too wide) in paragraph at lines 319--339
  [][] 
  []
 
 
-Overfull \hbox (41.01898pt too wide) in paragraph at lines 344--364
+Overfull \hbox (41.01898pt too wide) in paragraph at lines 345--365
  [][] 
  []
 
@@ -977,19 +977,19 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.381 \newpage
+l.382 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {table.5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.381 \newpage
+l.382 \newpage
               pdfTeX warning (ext4): destination with the same identifier (name
 {table.6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.381 \newpage
+l.382 \newpage
               ] [7] (sr_szablon_projekt.bbl
 Underfull \hbox (badness 2012) in paragraph at lines 4--9
 []\T1/cmr/m/n/10 W. Do-mski.  Ste-row-niki ro-bo-tów, La-bo-ra-to-rium -- Wpro-
@@ -997,15 +997,15 @@ wa-dze-nie, Wy-ko-rzy-sta-nie na-rz¦-dzi
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 387.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 388.
  [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 387.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 388.
  (sr_szablon_projekt.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 387.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 387.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 388.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 388.
 Package rerunfilecheck Info: File `sr_szablon_projekt.out' has not changed.
 (rerunfilecheck)             Checksum: 96F700D966A70AD75900AECE0977CCB9;2078.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 387.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 388.
  ) 
 Here is how much of TeX's memory you used:
  14144 strings out of 492946
@@ -1034,9 +1034,9 @@ type1/public/amsfonts/cm/cmex10.pfb><D:/Programy/Miktex/fonts/type1/public/amsf
 onts/cm/cmmi10.pfb><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 ><D:/Programy/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Programy/Mikt
 ex/fonts/type1/public/amsfonts/cm/cmr7.pfb>
-Output written on sr_szablon_projekt.pdf (9 pages, 213518 bytes).
+Output written on sr_szablon_projekt.pdf (9 pages, 215647 bytes).
 PDF statistics:
- 611 PDF objects out of 1000 (max. 8388607)
+ 617 PDF objects out of 1000 (max. 8388607)
  42 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
