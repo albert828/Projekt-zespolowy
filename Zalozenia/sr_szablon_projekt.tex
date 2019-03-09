@@ -1,0 +1,467 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = pl_PL
+
+% $Id:$
+
+%Author: Wojciech Domski
+%Szablon do ząłożeń projektowych, raportu i dokumentacji z steorwników robotów
+%Wersja v.1.0.0
+%
+
+
+%% Konfiguracja:
+\newcommand{\kurs}{Projekt Zespo\l{}owy}
+\newcommand{\formakursu}{Projekt}
+
+%odkomentuj właściwy typ projektu, a pozostałe zostaw zakomentowane
+\newcommand{\doctype}{Za\l{}o\.{z}enia projektowe} %etap I
+%\newcommand{\doctype}{Raport} %etap II
+%\newcommand{\doctype}{Dokumentacja} %etap III
+
+%wpisz nazwę projektu
+\newcommand{\projectname}{Urządzenie badające mikroklimat pomieszczenia biurowego w celu zwiększenia komfortu i efektywności pracy}
+
+%wpisz akronim projektu
+%\newcommand{\acronim}{ZuO}
+
+%wpisz Imię i nazwisko oraz numer albumu
+\newcommand{\osobaC}{Albert \textsc{Lis}, 235534}
+%w przypadku projektu jednoosobowego usuń zawartość nowej komendy
+\newcommand{\osobaE}{Michał \textsc{Moruń}, 235986}
+\newcommand{\osobaB}{Paula \textsc{Langkafel}, 235373}
+\newcommand{\osobaA}{Krzysztof \textsc{Kurnik}, 237603}
+\newcommand{\osobaD}{Maciej \textsc{Maruszak}, 235437}
+
+%wpisz termin w formie, jak poniżej dzień, parzystość, godzina
+\newcommand{\termin}{śr 8:15}
+
+%wpisz imię i nazwisko prowadzącego
+\newcommand{\prowadzacy}{dr in\.{z}. Krzysztof \textsc{Arent}}
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{pgfgantt}
+\usepackage{blindtext}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\include{preambula}
+	
+\begin{document}
+
+\def\tablename{Tabela}	%zmienienie nazwy tabel z Tablica na Tabela
+
+\begin{titlepage}
+	\begin{center}
+		\textsc{\LARGE \formakursu}\\[1cm]		
+		\textsc{\Large \kurs}\\[0.5cm]		
+		\rule{\textwidth}{0.08cm}\\[0.4cm]
+		{\huge \bfseries \doctype}\\[1cm]
+		{\huge \bfseries \projectname}\\[0.5cm]
+%		{\huge \bfseries \acronim}\\[0.4cm]
+		\rule{\textwidth}{0.08cm}\\[1cm]
+		
+		\begin{flushright} \large
+		\emph{Skład grupy:}\\
+		\osobaA\\
+		\osobaB\\
+		\osobaC\\
+		\osobaD\\
+		\osobaE\\[0.4cm]
+		
+		\emph{Termin: }\termin\\[0.4cm]
+
+		\emph{Prowadzący:} \\
+		\prowadzacy \\
+		
+		\end{flushright}
+		
+		\vfill
+		
+		{\large \today}
+	\end{center}	
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+%Obecne we wszystkich dokumentach
+\section{Opis projektu}
+\label{sec:OpisProjektu}
+
+Problem projektu (opis ogólny, nie więcej niż jedna strona). Co jest jego przedmiotem, dlaczego ważne jest podjęcie tego zagadnienia (powołać się na ważniejsze pozycje bibliograficzne), co jest spodziewanym wynikiem prac, co on wnosi do dziedziny robotyki, w jaki sposób wyniki będą upowszechniane (domyślnie serwis www zawierający: archiwum z oprogramowaniem, dokumentację algorytmów, dokumentację oprogramowania dla użytkowników, deweloperów i administratorów, dokumentację układu mechanicznego i elektronicznego, zgodną z polskimi normami, przykłady działania w formie plików konfiguracyjnych, zdjęć, filmów, raportów).
+
+Urządzenie badające mikroklimat w pomieszczeniu biurowym w celu zwiększenia komfortu i efektywności pracy.
+
+
+Istotą projektu będzie sprawdzanie warunków środowiskowych w pomieszczeniach biurowych. 
+Praca w odpowiednich warunkach pozwala na skuteczniejsze zarządzanie swoim czasem, oraz efektywniejsze wykonywanie postawionych zadań. Nieczęsto jednak ludzie są świadomi warunków panujących w danym pomieszczeniu. Senność, brak energii na wykonywanie nawet podstawowych czynności może wynikać nie tylko z naszego samopoczucia czy stanu zdrowia, ale również z otoczenia w którym się obecnie znajdujemy. Sami nie jesteśmy naocznie w stanie sprawdzić, czy w danym pomieszczeniu nie brakuje tlenu, co jest główną przyczyną senności. Pomimo możliwości wykrycia zbyt wysokiej lub niskiej temperatury, często ignorujemy sygnały naszego ciała i pochłonięci pracą nie reagujemy na bierząco na zapotrzebowania naszego organizmu. Urządzenie nas wyręczy i rozszerzy zakres detekcji podstawowych czynników informując o niewłaściwych parametrach.
+
+Zostaną użyte następujące czujniki:
+
+\begin{description}[font=$\bullet$~\normalfont]
+\item temperatury
+\item wilgotności
+\item ciśnienia
+\item dwutlenku/tlenku węgla
+\item netężenia światła
+\item hałasu
+\end{description}
+
+Urządzenie będzie w formie małego pudełka, które będzie swobodnie spoczywać na biurku lub innej powierzchni w badanym pomieszczeniu. Jedynym wymogiem co do ułożenia będzie czujnik oświetlenia, który powinien być skierowany w górę. Zasilanie całości będzie zrealizowane bezpośrednio z sieci 230V, poprzez zasilacz wyposarzony w przetwornicę prądowo napięciową, dostaraczającą do samego urządzenia około 5V.
+
+Zbieranie danych będzie odbywać się w sposób ciągły, lub w określonych ramach czasowych, zależnie od ustawień użytkownika. Pomiary, poprzez wbudowany moduł WiFi, będą bezpośrednio przesyłane na serwer. Po dokonaniu analizy użytkownik zostanie poinformowany o jakości klimatu w pomieszczeniu i ewentualnej potrzebie reagowania. Informacje będą udostępnione na stronie internetowej serwera, gdzie zostanie stworzony intuicyjny interfejs użytkownika, umożliwający bezpośrednią analizę pozyskanych aktualnych pomiarów jak i wczesniejszych.
+
+%Obecne we wszystkich dokumentach
+\section{Plan pracy i rozklad w czasie \textbf{\textit {ROZWINĄĆ JESZCZE KAŻDY ETAP}}}
+
+Plan pracy i rozkład w czasie (nie więcej niż jedna strona). Należy zdekomponować problem na zadania i przypisać im zasoby, wyróżnić kamienie milowe, sporządzić diagram Gantta, dokonać analizy obciążenia zasobów.
+
+Początkowo projekt zostanie podzielony na 5 etapów, wyróżniając 4 kamienie milowe oraz końcowe oddanie urządzenia. 
+
+Pierwszy etap będzie skupiał się na pojęciu "ergonomii" czyli nauki o pracy. Zostaną zebrane informacje, powołując się na badania i przepisyw prawne dotyczące właściwych warunków pracy. Wyszczególnione wartości poszczególnych współczynników środowiskowych posłużą do analizy zbieranych danych, a następnie do poinformowania użytkownika o ewentualnych możliwościach polepszenia aktualnych warunków. 
+
+Wraz z drugim etapem zacznie się techniczna część realizaji projektu. Zbudowanie samego urządzenia, wstępnie zbierającego dane na dysk lokalny, a następnie wysyłającego dane na serwer. Bazową płytką, do której będą podłaćzonego wszystkie czujniki będzie Arduino Mega, umożliwiające nieskoplikowaną obsługę pobierania danych.
+
+Trzeci etap będzie skupiał się na przygotowaniu obsługi danych z czujników w przestrzeni serwerowej. Wiąże się to z utworzeniem bazy danych wszystkich pomiarów z wyszczególnionym dniem i godziną. Następnie zostanie stworzony interfejs dla użytkowników oraz administratorów systemu. 
+
+
+\begin{ganttchart}{-13}{14}
+\gantttitle{2019}{28}{14} \\
+\gantttitlelist{1,...,14}{2} \\
+\ganttgroup{Ergonomia}{-13}{-10} \\
+\ganttgroup{Elektronika}{-9}{-4} \\
+\ganttgroup{Serwer}{-3}{2} \\
+\ganttbar{Task 1}{1}{2} \\
+\ganttlinkedbar{Task 2}{3}{7} \ganttnewline
+\ganttmilestone{Milestone}{7} \ganttnewline
+\ganttbar{Final Task}{8}{12}
+\ganttlink{elem2}{elem3}
+\ganttlink{elem3}{elem4}
+\end{ganttchart}
+
+\section{Doręczenie}
+Doręczenie (nie więcej niż pół strony). Należy określić co zostanie zawarte w raportach stowarzyszonych z poszczególnymi kamieniami milowymi, kiedy zostaną doręczone, co będzie do nich załączone (np. archiwum z oprogramowaniem), stopień jawności.
+
+1. Etap 1
+2. Etap 2
+3. Etap 3
+
+\section{Budżet}
+Budżet (opcja, nie więcej niż na pół strony). Należy przedstawić proponowane nakłady osobowe, bezosobowe, na aparaturę, na materiały, itp.
+
+\section{Zarządzanie projektem}
+Zarządzanie projektem (nie więcej niż na pół strony). W jaki sposób będzie zorganizowana koordynacja działań poszczególnych partnerów (określić strukturę zarządzania, mechanizmy monitorowania postępów prac, terminy regularnych spotkań, sposób składowania i wymiany dokumentów roboczych, narzędzia i zasady komunikacji zdalnej, narzędzia i zasady zespołowego rozwoju oprogramowania i tworzenia dokumentów, itd)? Jaki będzie zakres uprawnień koordynatora zespołu? W jaki sposób będą rozwiązywane potencjalne konflikty i według jakich zasad będą podejmowane decyzje? Jakie będą reguły przyznawania praw własności intelektualnej do uzyskanych wyników prac.
+
+\section{Zespół}
+Zespół (nie więcej niż na pół strony). Dane koordynatora projektu, lista pozostałych członków zespołu projektowego, odpowiedzialność za poszczególne zadania. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/obraz.png}
+	\caption{Konfiguracja wyjść mikrokontrolera w programie STM32CubeMX}
+	\label{fig:KonfiguracjaMikrokontrolera}
+\end{figure}
+
+\newpage
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textheight,angle=90]{figures/obraz.png}
+	\caption{Konfiguracja zegarów mikrokontrolera}
+	\label{fig:KonfiguracjaZegara}
+\end{figure}
+
+%Obecne we wszystkich dokumentach
+\subsection{Konfiguracja pinów}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		Numer pinu	&	PIN & Tryb pracy & Funkcja/etykieta\\
+		\hline
+		2&	PC13 & ANTI\_TAMP	GPIO\_EXTI13	&B1 [Blue PushButton]\\
+		3&	PC14 & OSC32\_IN*	RCC\_OSC32\_IN	&\\
+		4&	PC15 & OSC32\_OUT*	RCC\_OSC32\_OUT	&\\
+		5&	PH0&  OSC\_IN*	RCC\_OSC\_IN	&\\
+		6&	PH1&  OSC\_OUT*&		RCC\_OSC\_OUT	\\
+		16&	PA2&	USART2\_TX&	USART\_TX\\
+		17&	PA3&	USART2\_RX&	USART\_RX\\
+		21&	PA5&	GPIO\_Output&	LD2 [Green Led]\\
+		29&	PB10&	I2C2\_SCL&	I2C\_SCL\\
+		41&	PA8&	TIM1\_CH1&	PWM1\\
+		46&	PA13*&	SYS\_JTMS-SWDIO&	TMS\\
+		49&	PA14*&	SYS\_JTCK-SWCLK&	TCK\\
+		55&	PB3*&	SYS\_JTDO-SWO&	SWO\\
+		62&	PB9&	I2C2\_SDA&	I2C\_SCL\\
+		\hline
+	\end{tabular}
+	\caption{Konfiguracja pinów mikrokontrolera}
+	
+\end{table}
+
+%Obecne we wszystkich dokumentach
+\subsection{USART}
+
+Przykładowa konfiguracja peryferium interfejsu szeregowego.
+Należy opisać do czego będzie wykorzystywany interfejs. 
+Zmiany, które odbiegają od standardowych w programie CubeMX 
+powinn być zaznaczone innym kolorem, jak to zostało pokazane 
+w tabeli \ref{tab:USART}.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|c|} \hline
+		\textbf{Parametr} & Wartość \\
+		\hline
+		\hline  \textbf{Baud Rate}&11520  \\\hline
+		\textbf{Word Length } & \textcolor{blue}{8 Bits (including parity)}\\\hline
+		\textbf{Parity} &  None\\
+		\hline
+		\textbf{Stop Bits}& 1\\
+		\hline
+	\end{tabular}
+	\caption{Konfiguracja peryferium USART}
+	\label{tab:USART}
+\end{table}
+
+%Obecne w dokumencie do etapu II oraz III
+\section{Urządzenia zewnętrzne}
+
+Rozdział ten powinien zawierać opis i konfigurację wykorzystanych ukladów
+zewnętrznych, jak np. akcelerometr.
+
+%Obecne w dokumencie do etapu II oraz III
+\subsection{Akcelerometr -- LSM303C}
+
+Akcelerometr został wykorzystany do ...
+
+Konfiguracja rejestrów czujnika została zaprezentowana w ...
+Wpisanie tych wartości do rejestrów urządzenia ... powoduje ...
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|c|} \hline
+		\textbf{Rejestr} & Wartość \\
+		\hline
+		\hline
+		CTRL\_REG2 (0x21) & 0x12\\\hline
+		CTRL\_REG3 (0x22) & 0x13\\\hline
+	\end{tabular}
+	\caption{Konfiguracja peryferium USART}
+	\label{tab:Akcelerometr}
+\end{table}
+
+%Obecne w dokumencie do etapu II oraz III
+\section{Projekt elektroniki}
+	\subsection{Czujniki}
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|r|l|} \hline
+			\textbf{Wielkość mierzona} & \textbf{Symbol czujnika} \\
+			\hline
+			Wilgotność + Temperatura & SHT11/\textbf{30}/31 \\
+			Ciśnienie & Bmp085/\textbf{180} \\
+			Smog & GP2Y1010AU0F \\
+			Dym & MQ-2/\textbf{MQ-9} \\
+			Tlenek węgla (CO) & MQ-7 \\
+			Alkohol & \textbf{MQ-3}/MQ-135 \\
+			Dwutlenek węgla (CO$_2$) & DFRobot SEN219 / MH-Z19 \\
+			Natężenie światła & TSL235R, \textbf{BH1750FVI} \\ \hline
+			Temperatura (opcjonalnie) &	DS18B20 \\ \hline
+		\end{tabular}
+		\caption{Użyte czujniki}
+		\label{tab:Czujniki}
+	\end{table}
+%W przypadku, w którym projekt uwzględnia zastosowanie 
+%dodatkowej elektroniki to wówczas jej opis powinien znaleźć się tutaj.
+%Należy dołączyć schematy elektroniczne w formacie PDF 
+%jako dodatek do dokumentu 
+%za pomocą \textit{include}. Również w przypadku wytworzenia 
+%płytek PCB powinny znaleźć się tutaj ich widoki za zachowaniem skali.
+%Można również dołączyć zdjęcia 
+%elektroniki po uprzednim skompresowaniu, aby wynikowy rozmiar 
+%skompilowanego dokumentu nie był za duży.
+
+%Obecne w dokumencie do etapu II oraz III
+\section{Konstrukcja mechaniczna}
+
+W przypadku, w którym projekt uwzględnia zastosowanie 
+mechaniki to wówczas jej opis powinien znaleźć się tutaj.
+Nie należy dzielić rysunków mechaniki na poszczególne rzuty, 
+wystarczy zamieścić wyrenderowane modele 3D.
+Można również dołączyć zdjęcia wykonanej 
+mechaniki po uprzednim skompresowaniu, aby wynikowy rozmiar 
+skompilowanego dokumentu nie był za duży.
+
+%Obecne w dokumencie do etapu II oraz III
+\section{Opis działania programu}
+
+Należy zawrzeć tutaj opis działania programu.
+Mile widziany diagram prezentujący pracę programu.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/obraz.png}
+	\caption{Diagram przepływu}
+	\label{fig:Program}
+\end{figure}
+
+Sekcję tą można podzielić na dodatkowe podsekcje w miarę potrzeb. 
+Do tego celu nalezy wykorzystać \textit{subsection}.
+
+W przypadku, dodania istotnego fragmentu kodu należy posłużyć się środowiskiem 
+lstlisting:
+
+\begin{lstlisting}[tabsize=2]
+int foo(void){
+return 2;
+}
+\end{lstlisting}
+
+Przykładowy wzór (\ref{eq:Wzor}):
+\begin{equation}
+\label{eq:Wzor}
+\Theta = \int_t^{t+dt} \omega \, dt.	
+\end{equation}
+
+Przykładowa pozycja bibliograficzna \cite{SR01} znajduje się 
+w pliku bibliografia.bib.
+
+%Obecne w dokumencie do etapu I
+\section{Harmonogram pracy}
+
+Należy wstawić diagram Gantta oraz określić ścieżkę 
+krytyczną. Ponadto zaznaczyć i opisać kamienie milowe.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/obraz.png}
+	\caption{Diagram Gantta}
+	\label{fig:DiagramGantta}
+\end{figure}
+
+%Obecne w dokumencie do etapu I
+\subsection{Podział pracy}
+
+\textbf{Każdy z członków grupy powinien w każdym etapie mieć wymienione od 2 do 4 zadań.}
+Przykładowa tabele podziału zadań dla etapu II 
+(Tab. \ref{tab:PodzialPracyEtap2}) oraz dla etapu III 
+(Tab. \ref{tab:PodzialPracyEtap3})
+zostały przedstawione poniżej. 
+Przy podziale prac nie uwzględniamy tworzenia dokumentacji projektu!
+
+Przykładowy podział prac dla projektu pod tytułem 
+"Automatyczny dyktafon rozmowy":
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|L{7cm}|L{0.8cm}||L{7cm}|L{0.8cm}|}
+		\hline
+		\hline
+		\textbf{Adam Babacki} & 
+		\% & 
+		\textbf{Bartłomiej Cabacki} & \%\\
+		\hline
+		\hline
+		Wstępna konfiguracja peryferiów w programie CubeMx		& &	
+		Wstępna konfiguracja peryferiów w programie CubeMx &\\
+		\hline
+		Implementacja obsługi mikrofonu & &
+		Opracowanie algorytmu automatycznej detekcji rozmowy &\\
+		\hline
+		Opracowanie sposobu przechowywania danych na zewnętrznej pamięci FLASH & &
+		Oprogramowanie testujące obsługę mikrofonu & \\
+		\hline
+		Odtwarzanie dźwięku za pomocą Audio DAC & & &\\
+		\hline
+	\end{tabular}
+	\caption{Podział pracy -- Etap II}
+	\label{tab:PodzialPracyEtap2}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|L{7cm}|L{0.8cm}||L{7cm}|L{0.8cm}|}
+		\hline
+		\hline
+		\textbf{Adam Babacki} & 
+		\% & 
+		\textbf{Bartłomiej Cabacki} & \%\\
+		\hline
+		\hline
+		Finalna konfiguracja peryferiów w programie CubeMX		& &	
+		Finalna konfiguracja peryferiów w programie CubeMX &\\
+		\hline
+		Zapisywanie dźwięku na pamięć zewnętrzną FLASH  & &
+		Integracja modułów &\\
+		\hline
+		Obsługa wyświetlacza ciekłokrystalicznego & &
+		Obsługa joysticka & \\
+		\hline
+		 & & Interfejs użytkownika &\\
+		\hline
+	\end{tabular}
+	\caption{Podział pracy -- Etap III}
+	\label{tab:PodzialPracyEtap3}
+\end{table}
+
+%Obecne w dokumencie do etapu II oraz III (jeśli coś zostało niezrealizowane)
+\section{Zadania niezrealizowane}
+
+Jeśli wszystkie zadania zostały realizowane to wówczas 
+ta sekcja powinna być usunięta w całości. W przeciwnym razie
+należy zawrzeć tutaj, jakie zadania zostały nie zrealizowane 
+oraz jaka była tego przyczyna.
+
+%Obecne we wszystkich dokumentach
+\section{Podsumowanie}
+
+Krótkie podsumowanie projektu
+
+\newpage
+\addcontentsline{toc}{section}{Bibilografia}
+\bibliography{bibliografia}
+\bibliographystyle{plabbrv}
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
