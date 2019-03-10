@@ -88,12 +88,11 @@
 \section{Opis projektu}
 \label{sec:OpisProjektu}
 
-\textit{\textbf{Problem projektu (opis ogólny, nie więcej niż jedna strona). Co jest jego przedmiotem, dlaczego ważne jest podjęcie tego zagadnienia (powołać się na ważniejsze pozycje bibliograficzne), co jest spodziewanym wynikiem prac, co on wnosi do dziedziny robotyki, w jaki sposób wyniki będą upowszechniane (domyślnie serwis www zawierający: archiwum z oprogramowaniem, dokumentację algorytmów, dokumentację oprogramowania dla użytkowników, deweloperów i administratorów, dokumentację układu mechanicznego i elektronicznego, zgodną z polskimi normami, przykłady działania w formie plików konfiguracyjnych, zdjęć, filmów, raportów).}}
-
 Urządzenie badające mikroklimat w pomieszczeniu biurowym w celu zwiększenia komfortu i efektywności pracy.
 
-
-Przedmiotem projektu jest sprawdzanie i optymalizacja warunków panujących w pomieszczeniach biurowych. Praca w odpowiednich warunkach pozwala na skuteczniejsze zarządzanie swoim czasem, oraz efektywniejsze wykonywanie postawionych zadań. Pracownicy i pracodawcy często nie są świadomi warunków panujących w danym pomieszczeniu. Senność, brak energii na wykonywanie nawet podstawowych czynności może wynikać nie tylko z naszego samopoczucia czy stanu zdrowia, ale również mogą mieć na to wpływ warunki panujące w pomieszczeniu w którym się obecnie znajdujemy. Sami nie jesteśmy naocznie w stanie sprawdzić, czy w danym pomieszczeniu nie brakuje tlenu, co jest główną przyczyną senności. Pomimo możliwości wykrycia zbyt wysokiej lub niskiej temperatury, często ignorujemy sygnały naszego ciała i pochłonięci pracą nie reagujemy na bierząco na zapotrzebowania naszego organizmu. Urządzenie nas wyręczy i rozszerzy zakres detekcji podstawowych czynników informując o niewłaściwych parametrach.
+Przedmiotem projektu jest sprawdzanie i optymalizacja warunków panujących w pomieszczeniach biurowych, na podstawie badań z szerokiego zakresu nauki jaką jest ergonomia, a także norm prawnych. 
+Praca w odpowiednich warunkach pozwala na skuteczniejsze zarządzanie swoim czasem oraz efektywniejsze
+wykonywanie postawionych zadań. Często jednak zarówno pracownicy jak i pracodawcy nie zdają sobie sprawy jak niewłaściwe warunki środowiskowe wpływają na jakość pracy. Objawami niekorzystnych parametów panujących w biurze może być brak energii, senność i uczucie zmęczenia. Nawet jeżeli pracownik wykryje zbyt wysoką temperaturę lub niewystarczające oświetlenie bywa, że ignoruje te sygnały pochłonięty pracą. Przedstawiane urządzenie go wyręczy i rozszerzy zakres detekcji podstawowych czynników informując o niewłaściwych parametrach.
 
 Wykorzystane zostaną następujące czujniki:
 
@@ -108,68 +107,102 @@ Wykorzystane zostaną następujące czujniki:
 
 Urządzenie będzie w formie małego pudełka, które będzie swobodnie spoczywać na biurku lub innej powierzchni w badanym pomieszczeniu. Jedynym wymogiem co do ułożenia będzie czujnik oświetlenia, który powinien być skierowany w górę. Zasilanie całości będzie zrealizowane bezpośrednio z sieci 230V, poprzez zasilacz wyposarzony w przetwornicę prądowo napięciową, dostaraczającą do samego urządzenia około 5V.
 
-Zbieranie danych będzie odbywać się w sposób ciągły, lub w określonych ramach czasowych, zależnie od ustawień użytkownika. Pomiary, poprzez wbudowany moduł WiFi, będą bezpośrednio przesyłane na serwer. Po dokonaniu analizy użytkownik zostanie poinformowany o jakości klimatu w pomieszczeniu i ewentualnej potrzebie reagowania. Informacje będą udostępnione na stronie internetowej serwera, gdzie zostanie stworzony intuicyjny interfejs użytkownika, umożliwający bezpośrednią analizę pozyskanych aktualnych pomiarów jak i wczesniejszych.
+Zbieranie danych będzie odbywać się w sposób ciągły, lub w określonych ramach czasowych, zależnie od ustawień użytkownika. Pomiary, poprzez wbudowany moduł WiFi, będą bezpośrednio przesyłane na serwer. Po dokonaniu analizy użytkownik zostanie poinformowany o jakości klimatu w pomieszczeniu i ewentualnej potrzebie reagowania. Informacje będą udostępnione na stronie internetowej serwera, gdzie zostanie stworzony intuicyjny interfejs użytkownika, umożliwający bezpośrednią analizę pozyskanych aktualnych pomiarów jak i wcześniejszych.
 
 %Obecne we wszystkich dokumentach
-\section{Plan pracy i rozklad w czasie \textbf{\textit {ROZWINĄĆ JESZCZE KAŻDY ETAP}}}
-
-\textit{\textbf{Plan pracy i rozkład w czasie (nie więcej niż jedna strona). Należy zdekomponować problem na zadania i przypisać im zasoby, wyróżnić kamienie milowe, sporządzić diagram Gantta, dokonać analizy obciążenia zasobów.}}
+\section{Plan pracy i rozklad w czasie}
 
 Początkowo projekt zostanie podzielony na 5 etapów, wyróżniając 4 kamienie milowe oraz końcowe oddanie urządzenia. 
-
+\subsection{Kamienie milowe}
+\subsubsection{Ergonomia}
 Pierwszy etap będzie skupiał się na pojęciu ergonomii czyli nauki o pracy. Zostaną zebrane informacje, powołujące sie na badania i przepisy prawne dotyczące właściwych warunków pracy. Badane wartości poszczególnych współczynników środowiskowych posłużą do analizy zbieranych danych, a następnie do informowania użytkownika o ewentualnych możliwościach polepszenia aktualnie panujących warunków.
 
-Wraz z drugim etapem zacznie się techniczna część realizaji projektu. Zbudowanie samego urządzenia, wstępnie zbierającego dane na dysk lokalny, a następnie wysyłającego dane na serwer. Bazową płytką, do której będą podłączonego wszystkie czujniki będzie Arduino Mega, umożliwiające podłączenie oraz oprogramowanie wszystkich podzespołów.
+\subsubsection{Elektronika}
+Wraz z drugim etapem zacznie się techniczna część realizaji projektu. Zbudowanie samego urządzenia, wstępnie zbierającego dane na dysk lokalny, a następnie dodanie funkcjonalności w postaci wysyłania danych na serwer. Bazową płytką, do której będą podłączonego wszystkie czujniki, będzie Arduino Mega, umożliwiające podłączenie oraz oprogramowanie wszystkich podzespołów. Sygnalizacja warunków zostanie wsępne zrealizowana na diodach LED RGB, co w przyszłości można rozbudować np. o wyświetlacz OLED.
 
-Trzeci etap będzie skupiał się na przygotowaniu obsługi danych z czujników w przestrzeni serwerowej. Wiąże się to z utworzeniem bazy danych wszystkich pomiarów z wyszczególnionym dniem i godziną. Następnie zostanie stworzony interfejs dla użytkowników oraz administratorów systemu. W aplikacji webowej będą dostępne informacje nt. warunków panujących w pomieszczeniu oraz sugestie dla użytkowników jakie działania mają przedsięwziąć.
+\subsubsection{Serwer}
+Ostatni etap będzie skupiał się na przygotowaniu obsługi danych z czujników w przestrzeni serwerowej. Wiąże się to z utworzeniem bazy danych wszystkich pomiarów z wyszczególnionym dniem i godziną. Następnie zostanie stworzony interfejs dla użytkowników oraz administratorów systemu. W aplikacji webowej będą dostępne informacje nt. warunków panujących w pomieszczeniu oraz sugestie dla użytkowników jakie działania mają przedsięwziąć.
+
+\subsection{Dekompozycja projektu}
+
+\subsubsection{Ergonomia}
+\begin{enumerate}
+\item Zebranie badań dotyczących ergonomii
+\item Wyszczególnienie najważniejszych współczynników
+\item Określenie zakresu współczynników
+\item Wybranie odpowiedniej formy zachowania się w przypadku przekroczenia dopuszczalnej wartości
+\end{enumerate}
+\subsubsection{Elektronika}
+\begin{enumerate}
+\item Podłączenie i oprogramowanie czujnika:
+	\begin{description}[font=$\bullet$~\normalfont]
+	\item temperatury i wilgotności
+	\item ciśnienia
+	\item dwutlenku/tlenku węgla
+	\item natężenia światła
+	\item hałasu
+	\end{description}
+\item Podłączenie i oprogramowanie modułu WiFi ESP8266
+\item Dobranie i określenie w programie zakresów współczynników
+\item Dodanie sygnalizacji diodą LED
+\end{enumerate}
+
+\subsubsection{Serwer}
+\begin{enumerate}
+\item Back-end
+	\begin{enumerate}
+	\item Odbieranie danych z Arduino
+	\item Zapisywanie odebranych pomiarów
+	\item Utworzenie bazy danych
+	\item Klasyfikacja pomiarów w bazie danych
+	\end{enumerate}
+\item Front-end	
+	\begin{enumerate}
+	\item Wyświetlanie danych w formie tabeli na stronie
+	\item Stworzenie interfejsu graficznego pokazującego pomiary w formie wykresów
+	\item Stworzenie systemu powiadomień w wypadku przekroczenia dopuszczalnych wartości
+	\end{enumerate}
+\end{enumerate}
+
+\subsection{Wykres Gantta}
 
 
-\begin{ganttchart}{-13}{14}
+\hspace{-50px}
+\begin{ganttchart}[hgrid,vgrid]{1}{28}
 \gantttitle{2019}{28}{14} \\
 \gantttitlelist{1,...,14}{2} \\
-\ganttgroup{Ergonomia}{-13}{-10} \\
-\ganttgroup{Elektronika}{-9}{-4} \\
-\ganttgroup{Serwer}{-3}{2} \\
-\ganttbar{Task 1}{1}{2} \\
-\ganttlinkedbar{Task 2}{3}{7} \ganttnewline
-\ganttmilestone{Milestone}{7} \ganttnewline
-\ganttbar{Final Task}{8}{12}
-\ganttlink{elem2}{elem3}
-\ganttlink{elem3}{elem4}
+\ganttgroup{Ergonomia}{1}{4} \\
+\ganttgroup{Elektronika}{5}{10} \\
+\ganttgroup{Serwer}{11}{22} \\
+\ganttgroup{Back-end}{11}{15} \\
+\ganttgroup{Front-end}{16}{22}
 \end{ganttchart}
 
+
 \section{Doręczenie}
-\textit{\textbf{Doręczenie (nie więcej niż pół strony). Należy określić co zostanie zawarte w raportach stowarzyszonych z poszczególnymi kamieniami milowymi, kiedy zostaną doręczone, co będzie do nich załączone (np. archiwum z oprogramowaniem), stopień jawności.}}
 
-
-\begin{enumerate}
-\item Ergonomia
+\subsection{Ergonomia}
 	\begin{enumerate}
 	\item Opis zmiennych środowiskowych wpływających na samopoczucie i zdrowie w miejscu pracy, w tym określenie skutków niezapewnienia odpowiednich warunków.
 	\item Wyszczególnione odpowiednie zakresy zmiennych środowiskowych.
 	\item Opis sposobów reagowania w celu poprawienia warunków panujących w pomieszczeniu
 	\end{enumerate}
-\item Elektronika
+\subsection{Elektronika}
 	\begin{enumerate}
 	\item Opis i parametry układu sterującego oraz czujników
 	\item Opis sposobu komunikacji z serwerem
 	\item Archiwum z programem obsługującym urządzenie
 	\end{enumerate}
-\item Serwer
+\subsection{Serwer}
 	\begin{enumerate}
 	\item Struktura bazy danych czujników
 	\item Aplikacja webowa z interfejsem użytkownika
 	\item Archiwum z oprogramowaniem aplikacji webowej i bazy danych
 	\end{enumerate}
-\end{enumerate}
 
 
 \section{Budżet}
-\textit{\textbf{Budżet (opcja, nie więcej niż na pół strony). Należy przedstawić proponowane nakłady osobowe, bezosobowe, na aparaturę, na materiały, itp.}}
-
-\begin{description}[font=$\bullet$~\normalfont]
-\item Elektronika - czujniki
-\end{description}
+\subsection{Elektronika - czujniki}
 
 \begin{table}[H]
 		\centering
@@ -190,9 +223,8 @@ Trzeci etap będzie skupiał się na przygotowaniu obsługi danych z czujników 
 		\label{tab:Czujniki}
 	\end{table}
 
-\begin{description}[font=$\bullet$~\normalfont]
-\item Elektronika - sterownie i komunikacja
-\end{description}
+
+\subsection{Elektronika - sterownie i komunikacja}
 
 \begin{table}[H]
 		\centering
@@ -207,9 +239,7 @@ Trzeci etap będzie skupiał się na przygotowaniu obsługi danych z czujników 
 		\label{tab:Sterowanie}
 	\end{table}
 	
-\begin{description}[font=$\bullet$~\normalfont]
-\item Zasoby ludzkie
-\end{description}
+\subsection{Zasoby ludzkie}
 
 \begin{table}[H]
 		\centering
@@ -228,8 +258,6 @@ Trzeci etap będzie skupiał się na przygotowaniu obsługi danych z czujników 
 	\end{table}
 
 \section{Zarządzanie projektem}
-\textit{\textbf{Zarządzanie projektem (nie więcej niż na pół strony). W jaki sposób będzie zorganizowana koordynacja działań poszczególnych partnerów (określić strukturę zarządzania, mechanizmy monitorowania postępów prac, terminy regularnych spotkań, sposób składowania i wymiany dokumentów roboczych, narzędzia i zasady komunikacji zdalnej, narzędzia i zasady zespołowego rozwoju oprogramowania i tworzenia dokumentów, itd)? Jaki będzie zakres uprawnień koordynatora zespołu? W jaki sposób będą rozwiązywane potencjalne konflikty i według jakich zasad będą podejmowane decyzje? Jakie będą reguły przyznawania praw własności intelektualnej do uzyskanych wyników prac.}}
-
 \begin{description}[font=$\bullet$~\normalfont]
 \item Raporty, oddawane podczas oddawania kamieni milowych na spotkaniach, będą nadzorowane poprzez poszczególne osoby odpowiedzialne za dany etap projektu wraz z koordynatorem zespołu.
 \item Zespół projektowy zakłada pracę według metodyki Scrum, dekomponując poszczególne kamienie milowe na mniejsze zadania, które będą wykonywane podczas tzw. sprintów trwających od tygodnia do czterech.
@@ -241,8 +269,6 @@ Trzeci etap będzie skupiał się na przygotowaniu obsługi danych z czujników 
 
 
 \section{Zespół}
-\textit{\textbf{Zespół (nie więcej niż na pół strony). Dane koordynatora projektu, lista pozostałych członków zespołu projektowego, odpowiedzialność za poszczególne zadania.}}
-
 \begin{description}[font=$\bullet$~\normalfont]
 \item Koordynator zespołu: Krzysztof Kurnik nr. indeksu: 237603 email: 237603@student.pwr.edu.pl
 \end{description}
