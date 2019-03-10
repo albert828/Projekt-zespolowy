@@ -2,19 +2,6 @@
 \contentsline {section}{\numberline {1}Opis projektu}{2}{section.1}
 \contentsline {section}{\numberline {2}Plan pracy i rozklad w czasie \textbf {\textit {ROZWIN\IeC {\k A}\IeC {\'C} JESZCZE KA\IeC {\.Z}DY ETAP}}}{2}{section.2}
 \contentsline {section}{\numberline {3}Dor\IeC {\k e}czenie}{3}{section.3}
-\contentsline {section}{\numberline {4}Bud\IeC {\.z}et}{3}{section.4}
-\contentsline {section}{\numberline {5}Zarz\IeC {\k a}dzanie projektem}{3}{section.5}
-\contentsline {section}{\numberline {6}Zesp\IeC {\'o}\IeC {\l }}{3}{section.6}
-\contentsline {subsection}{\numberline {6.1}Konfiguracja pin\IeC {\'o}w}{6}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}USART}{6}{subsection.6.2}
-\contentsline {section}{\numberline {7}Urz\IeC {\k a}dzenia zewn\IeC {\k e}trzne}{6}{section.7}
-\contentsline {subsection}{\numberline {7.1}Akcelerometr -- LSM303C}{6}{subsection.7.1}
-\contentsline {section}{\numberline {8}Projekt elektroniki}{7}{section.8}
-\contentsline {subsection}{\numberline {8.1}Czujniki}{7}{subsection.8.1}
-\contentsline {section}{\numberline {9}Konstrukcja mechaniczna}{7}{section.9}
-\contentsline {section}{\numberline {10}Opis dzia\IeC {\l }ania programu}{7}{section.10}
-\contentsline {section}{\numberline {11}Harmonogram pracy}{8}{section.11}
-\contentsline {subsection}{\numberline {11.1}Podzia\IeC {\l } pracy}{8}{subsection.11.1}
-\contentsline {section}{\numberline {12}Zadania niezrealizowane}{8}{section.12}
-\contentsline {section}{\numberline {13}Podsumowanie}{9}{section.13}
-\contentsline {section}{Bibilografia}{10}{section.13}
+\contentsline {section}{\numberline {4}Bud\IeC {\.z}et}{4}{section.4}
+\contentsline {section}{\numberline {5}Zarz\IeC {\k a}dzanie projektem}{4}{section.5}
+\contentsline {section}{\numberline {6}Zesp\IeC {\'o}\IeC {\l }}{5}{section.6}

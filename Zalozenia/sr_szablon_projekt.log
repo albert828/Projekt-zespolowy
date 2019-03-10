@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.26)  8 MAR 2019 23:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.10.26)  10 MAR 2019 12:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1256,17 +1256,7 @@ Non-PDF special ignored!
 
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-(./sr_szablon_projekt.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 8.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 8.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+(./sr_szablon_projekt.toc)
 \tf@toc=\write6
 \openout6 = `sr_szablon_projekt.toc'.
 
@@ -1275,153 +1265,83 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.85 \newpage
-              [1] [2]
+              [1]
+LaTeX Font Info:    Try loading font information for U+msa on input line 101.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 101.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [2]
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 
-Overfull \hbox (22.79709pt too wide) in paragraph at lines 140--141
+Overfull \hbox (22.79709pt too wide) in paragraph at lines 139--140
 [][] 
  []
 
-<figures/obraz.png, id=126, 432.86719pt x 305.64188pt>
-File: figures/obraz.png Graphic file (type png)
-<use figures/obraz.png>
-Package pdftex.def Info: figures/obraz.png  used on input line 160.
-(pdftex.def)             Requested size: 364.19667pt x 257.16647pt.
-[3] [4pdfTeX warning (ext4): destination with the same identifier (name{figure.
-1}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.165 \newpage
-               <./figures/obraz.png>]
-File: figures/obraz.png Graphic file (type png)
-<use figures/obraz.png>
-Package pdftex.def Info: figures/obraz.png  used on input line 168.
-(pdftex.def)             Requested size: 632.50047pt x 446.65314pt.
- [5pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
- has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.201 
-      ] [6pdfTeX warning (ext4): destination with the same identifier (name{tab
-le.1}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.284 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.2
+[3] [4pdfTeX warning (ext4): destination with the same identifier (name{table.1
 }) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.284 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-}) has been already used, duplicate ignored
+l.238 \item K
+             onflikty w zespole będą rozstrzygane przy pomocy mediacji w o...
+pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
+ been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.284 
-      ]
-File: figures/obraz.png Graphic file (type png)
-<use figures/obraz.png>
-Package pdftex.def Info: figures/obraz.png  used on input line 304.
-(pdftex.def)             Requested size: 227.62206pt x 160.72089pt.
-File: figures/obraz.png Graphic file (type png)
-<use figures/obraz.png>
-Package pdftex.def Info: figures/obraz.png  used on input line 338.
-(pdftex.def)             Requested size: 227.62206pt x 160.72089pt.
- [7pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
-has been already used, duplicate ignored
+l.238 \item K
+             onflikty w zespole będą rozstrzygane przy pomocy mediacji w o...
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
+ been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.341 \end{figure}
-                  pdfTeX warning (ext4): destination with the same identifier (
-name{figure.3}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.341 \end{figure}
-                  ]
-Overfull \hbox (41.01898pt too wide) in paragraph at lines 358--378
- [][] 
- []
-
-
-Overfull \hbox (41.01898pt too wide) in paragraph at lines 384--404
- [][] 
- []
-
-[8pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) 
-has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.421 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{table.5}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.421 \newpage
-              pdfTeX warning (ext4): destination with the same identifier (name
-{table.6}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.421 \newpage
-              ] [9] (./sr_szablon_projekt.bbl
-Underfull \hbox (badness 2012) in paragraph at lines 4--9
-[]\T1/cmr/m/n/10 W. Do-mski.  Ste-row-niki ro-bo-t�w, La-bo-ra-to-rium -- Wpro-
-wa-dze-nie, Wy-ko-rzy-sta-nie na-rz�-dzi
- []
-
-) [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 428.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 428.
+l.238 \item K
+             onflikty w zespole będą rozstrzygane przy pomocy mediacji w o...
+] [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 257.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 257.
  (./sr_szablon_projekt.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 428.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 428.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 257.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 257.
 Package rerunfilecheck Info: File `sr_szablon_projekt.out' has not changed.
-(rerunfilecheck)             Checksum: B366F9849FBD9F62A3477E868A09AA79;2657.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 428.
+(rerunfilecheck)             Checksum: 3C86981B8143CFABFB91BB3487EE45DF;880.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 257.
  ) 
 Here is how much of TeX's memory you used:
- 26604 strings out of 492639
- 469973 string characters out of 6129286
- 749682 words of memory out of 5000000
- 29967 multiletter control sequences out of 15000+600000
- 18510 words of font info for 40 fonts, out of 8000000 for 9000
+ 26212 strings out of 492639
+ 466572 string characters out of 6129286
+ 751682 words of memory out of 5000000
+ 29602 multiletter control sequences out of 15000+600000
+ 16970 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,10n,69p,903b,1215s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,69p,1066b,700s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/20
-18/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texlive/2018
-/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2018/tex
-mf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/texmf-dist/
-fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2018/texmf-dist/fo
-nts/type1/public/cm-super/sfti1200.pfb>
-Output written on sr_szablon_projekt.pdf (11 pages, 333052 bytes).
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
+sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/
+2018/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on sr_szablon_projekt.pdf (6 pages, 265639 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
- 47 named destinations out of 1000 (max. 500000)
- 170 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 149 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

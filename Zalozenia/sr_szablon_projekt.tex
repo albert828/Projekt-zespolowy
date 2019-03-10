@@ -88,22 +88,21 @@
 \section{Opis projektu}
 \label{sec:OpisProjektu}
 
-Problem projektu (opis ogólny, nie więcej niż jedna strona). Co jest jego przedmiotem, dlaczego ważne jest podjęcie tego zagadnienia (powołać się na ważniejsze pozycje bibliograficzne), co jest spodziewanym wynikiem prac, co on wnosi do dziedziny robotyki, w jaki sposób wyniki będą upowszechniane (domyślnie serwis www zawierający: archiwum z oprogramowaniem, dokumentację algorytmów, dokumentację oprogramowania dla użytkowników, deweloperów i administratorów, dokumentację układu mechanicznego i elektronicznego, zgodną z polskimi normami, przykłady działania w formie plików konfiguracyjnych, zdjęć, filmów, raportów).
+\textit{\textbf{Problem projektu (opis ogólny, nie więcej niż jedna strona). Co jest jego przedmiotem, dlaczego ważne jest podjęcie tego zagadnienia (powołać się na ważniejsze pozycje bibliograficzne), co jest spodziewanym wynikiem prac, co on wnosi do dziedziny robotyki, w jaki sposób wyniki będą upowszechniane (domyślnie serwis www zawierający: archiwum z oprogramowaniem, dokumentację algorytmów, dokumentację oprogramowania dla użytkowników, deweloperów i administratorów, dokumentację układu mechanicznego i elektronicznego, zgodną z polskimi normami, przykłady działania w formie plików konfiguracyjnych, zdjęć, filmów, raportów).}}
 
 Urządzenie badające mikroklimat w pomieszczeniu biurowym w celu zwiększenia komfortu i efektywności pracy.
 
 
-Istotą projektu będzie sprawdzanie warunków środowiskowych w pomieszczeniach biurowych. 
-Praca w odpowiednich warunkach pozwala na skuteczniejsze zarządzanie swoim czasem, oraz efektywniejsze wykonywanie postawionych zadań. Nieczęsto jednak ludzie są świadomi warunków panujących w danym pomieszczeniu. Senność, brak energii na wykonywanie nawet podstawowych czynności może wynikać nie tylko z naszego samopoczucia czy stanu zdrowia, ale również z otoczenia w którym się obecnie znajdujemy. Sami nie jesteśmy naocznie w stanie sprawdzić, czy w danym pomieszczeniu nie brakuje tlenu, co jest główną przyczyną senności. Pomimo możliwości wykrycia zbyt wysokiej lub niskiej temperatury, często ignorujemy sygnały naszego ciała i pochłonięci pracą nie reagujemy na bierząco na zapotrzebowania naszego organizmu. Urządzenie nas wyręczy i rozszerzy zakres detekcji podstawowych czynników informując o niewłaściwych parametrach.
+Przedmiotem projektu jest sprawdzanie i optymalizacja warunków panujących w pomieszczeniach biurowych. Praca w odpowiednich warunkach pozwala na skuteczniejsze zarządzanie swoim czasem, oraz efektywniejsze wykonywanie postawionych zadań. Pracownicy i pracodawcy często nie są świadomi warunków panujących w danym pomieszczeniu. Senność, brak energii na wykonywanie nawet podstawowych czynności może wynikać nie tylko z naszego samopoczucia czy stanu zdrowia, ale również mogą mieć na to wpływ warunki panujące w pomieszczeniu w którym się obecnie znajdujemy. Sami nie jesteśmy naocznie w stanie sprawdzić, czy w danym pomieszczeniu nie brakuje tlenu, co jest główną przyczyną senności. Pomimo możliwości wykrycia zbyt wysokiej lub niskiej temperatury, często ignorujemy sygnały naszego ciała i pochłonięci pracą nie reagujemy na bierząco na zapotrzebowania naszego organizmu. Urządzenie nas wyręczy i rozszerzy zakres detekcji podstawowych czynników informując o niewłaściwych parametrach.
 
-Zostaną użyte następujące czujniki:
+Wykorzystane zostaną następujące czujniki:
 
 \begin{description}[font=$\bullet$~\normalfont]
 \item temperatury
 \item wilgotności
 \item ciśnienia
 \item dwutlenku/tlenku węgla
-\item netężenia światła
+\item natężenia światła
 \item hałasu
 \end{description}
 
@@ -114,15 +113,15 @@ Zbieranie danych będzie odbywać się w sposób ciągły, lub w określonych ra
 %Obecne we wszystkich dokumentach
 \section{Plan pracy i rozklad w czasie \textbf{\textit {ROZWINĄĆ JESZCZE KAŻDY ETAP}}}
 
-Plan pracy i rozkład w czasie (nie więcej niż jedna strona). Należy zdekomponować problem na zadania i przypisać im zasoby, wyróżnić kamienie milowe, sporządzić diagram Gantta, dokonać analizy obciążenia zasobów.
+\textit{\textbf{Plan pracy i rozkład w czasie (nie więcej niż jedna strona). Należy zdekomponować problem na zadania i przypisać im zasoby, wyróżnić kamienie milowe, sporządzić diagram Gantta, dokonać analizy obciążenia zasobów.}}
 
 Początkowo projekt zostanie podzielony na 5 etapów, wyróżniając 4 kamienie milowe oraz końcowe oddanie urządzenia. 
 
-Pierwszy etap będzie skupiał się na pojęciu "ergonomii" czyli nauki o pracy. Zostaną zebrane informacje, powołując się na badania i przepisyw prawne dotyczące właściwych warunków pracy. Wyszczególnione wartości poszczególnych współczynników środowiskowych posłużą do analizy zbieranych danych, a następnie do poinformowania użytkownika o ewentualnych możliwościach polepszenia aktualnych warunków. 
+Pierwszy etap będzie skupiał się na pojęciu ergonomii czyli nauki o pracy. Zostaną zebrane informacje, powołujące sie na badania i przepisy prawne dotyczące właściwych warunków pracy. Badane wartości poszczególnych współczynników środowiskowych posłużą do analizy zbieranych danych, a następnie do informowania użytkownika o ewentualnych możliwościach polepszenia aktualnie panujących warunków.
 
-Wraz z drugim etapem zacznie się techniczna część realizaji projektu. Zbudowanie samego urządzenia, wstępnie zbierającego dane na dysk lokalny, a następnie wysyłającego dane na serwer. Bazową płytką, do której będą podłaćzonego wszystkie czujniki będzie Arduino Mega, umożliwiające nieskoplikowaną obsługę pobierania danych.
+Wraz z drugim etapem zacznie się techniczna część realizaji projektu. Zbudowanie samego urządzenia, wstępnie zbierającego dane na dysk lokalny, a następnie wysyłającego dane na serwer. Bazową płytką, do której będą podłączonego wszystkie czujniki będzie Arduino Mega, umożliwiające podłączenie oraz oprogramowanie wszystkich podzespołów.
 
-Trzeci etap będzie skupiał się na przygotowaniu obsługi danych z czujników w przestrzeni serwerowej. Wiąże się to z utworzeniem bazy danych wszystkich pomiarów z wyszczególnionym dniem i godziną. Następnie zostanie stworzony interfejs dla użytkowników oraz administratorów systemu. 
+Trzeci etap będzie skupiał się na przygotowaniu obsługi danych z czujników w przestrzeni serwerowej. Wiąże się to z utworzeniem bazy danych wszystkich pomiarów z wyszczególnionym dniem i godziną. Następnie zostanie stworzony interfejs dla użytkowników oraz administratorów systemu. W aplikacji webowej będą dostępne informacje nt. warunków panujących w pomieszczeniu oraz sugestie dla użytkowników jakie działania mają przedsięwziąć.
 
 
 \begin{ganttchart}{-13}{14}
@@ -140,328 +139,119 @@ Trzeci etap będzie skupiał się na przygotowaniu obsługi danych z czujników 
 \end{ganttchart}
 
 \section{Doręczenie}
-Doręczenie (nie więcej niż pół strony). Należy określić co zostanie zawarte w raportach stowarzyszonych z poszczególnymi kamieniami milowymi, kiedy zostaną doręczone, co będzie do nich załączone (np. archiwum z oprogramowaniem), stopień jawności.
+\textit{\textbf{Doręczenie (nie więcej niż pół strony). Należy określić co zostanie zawarte w raportach stowarzyszonych z poszczególnymi kamieniami milowymi, kiedy zostaną doręczone, co będzie do nich załączone (np. archiwum z oprogramowaniem), stopień jawności.}}
 
-1. Etap 1
-2. Etap 2
-3. Etap 3
+
+\begin{enumerate}
+\item Ergonomia
+	\begin{enumerate}
+	\item Opis zmiennych środowiskowych wpływających na samopoczucie i zdrowie w miejscu pracy, w tym określenie skutków niezapewnienia odpowiednich warunków.
+	\item Wyszczególnione odpowiednie zakresy zmiennych środowiskowych.
+	\item Opis sposobów reagowania w celu poprawienia warunków panujących w pomieszczeniu
+	\end{enumerate}
+\item Elektronika
+	\begin{enumerate}
+	\item Opis i parametry układu sterującego oraz czujników
+	\item Opis sposobu komunikacji z serwerem
+	\item Archiwum z programem obsługującym urządzenie
+	\end{enumerate}
+\item Serwer
+	\begin{enumerate}
+	\item Struktura bazy danych czujników
+	\item Aplikacja webowa z interfejsem użytkownika
+	\item Archiwum z oprogramowaniem aplikacji webowej i bazy danych
+	\end{enumerate}
+\end{enumerate}
+
 
 \section{Budżet}
-Budżet (opcja, nie więcej niż na pół strony). Należy przedstawić proponowane nakłady osobowe, bezosobowe, na aparaturę, na materiały, itp.
+\textit{\textbf{Budżet (opcja, nie więcej niż na pół strony). Należy przedstawić proponowane nakłady osobowe, bezosobowe, na aparaturę, na materiały, itp.}}
 
-\section{Zarządzanie projektem}
-Zarządzanie projektem (nie więcej niż na pół strony). W jaki sposób będzie zorganizowana koordynacja działań poszczególnych partnerów (określić strukturę zarządzania, mechanizmy monitorowania postępów prac, terminy regularnych spotkań, sposób składowania i wymiany dokumentów roboczych, narzędzia i zasady komunikacji zdalnej, narzędzia i zasady zespołowego rozwoju oprogramowania i tworzenia dokumentów, itd)? Jaki będzie zakres uprawnień koordynatora zespołu? W jaki sposób będą rozwiązywane potencjalne konflikty i według jakich zasad będą podejmowane decyzje? Jakie będą reguły przyznawania praw własności intelektualnej do uzyskanych wyników prac.
-
-\section{Zespół}
-Zespół (nie więcej niż na pół strony). Dane koordynatora projektu, lista pozostałych członków zespołu projektowego, odpowiedzialność za poszczególne zadania. 
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{figures/obraz.png}
-	\caption{Konfiguracja wyjść mikrokontrolera w programie STM32CubeMX}
-	\label{fig:KonfiguracjaMikrokontrolera}
-\end{figure}
-
-\newpage
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\textheight,angle=90]{figures/obraz.png}
-	\caption{Konfiguracja zegarów mikrokontrolera}
-	\label{fig:KonfiguracjaZegara}
-\end{figure}
-
-%Obecne we wszystkich dokumentach
-\subsection{Konfiguracja pinów}
+\begin{description}[font=$\bullet$~\normalfont]
+\item Elektronika - czujniki
+\end{description}
 
 \begin{table}[H]
-	\centering
-	\begin{tabular}{|l|l|l|l|}
-		\hline
-		Numer pinu	&	PIN & Tryb pracy & Funkcja/etykieta\\
-		\hline
-		2&	PC13 & ANTI\_TAMP	GPIO\_EXTI13	&B1 [Blue PushButton]\\
-		3&	PC14 & OSC32\_IN*	RCC\_OSC32\_IN	&\\
-		4&	PC15 & OSC32\_OUT*	RCC\_OSC32\_OUT	&\\
-		5&	PH0&  OSC\_IN*	RCC\_OSC\_IN	&\\
-		6&	PH1&  OSC\_OUT*&		RCC\_OSC\_OUT	\\
-		16&	PA2&	USART2\_TX&	USART\_TX\\
-		17&	PA3&	USART2\_RX&	USART\_RX\\
-		21&	PA5&	GPIO\_Output&	LD2 [Green Led]\\
-		29&	PB10&	I2C2\_SCL&	I2C\_SCL\\
-		41&	PA8&	TIM1\_CH1&	PWM1\\
-		46&	PA13*&	SYS\_JTMS-SWDIO&	TMS\\
-		49&	PA14*&	SYS\_JTCK-SWCLK&	TCK\\
-		55&	PB3*&	SYS\_JTDO-SWO&	SWO\\
-		62&	PB9&	I2C2\_SDA&	I2C\_SCL\\
-		\hline
-	\end{tabular}
-	\caption{Konfiguracja pinów mikrokontrolera}
-	
-\end{table}
-
-%Obecne we wszystkich dokumentach
-\subsection{USART}
-
-Przykładowa konfiguracja peryferium interfejsu szeregowego.
-Należy opisać do czego będzie wykorzystywany interfejs. 
-Zmiany, które odbiegają od standardowych w programie CubeMX 
-powinn być zaznaczone innym kolorem, jak to zostało pokazane 
-w tabeli \ref{tab:USART}.
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{|l|c|} \hline
-		\textbf{Parametr} & Wartość \\
-		\hline
-		\hline  \textbf{Baud Rate}&11520  \\\hline
-		\textbf{Word Length } & \textcolor{blue}{8 Bits (including parity)}\\\hline
-		\textbf{Parity} &  None\\
-		\hline
-		\textbf{Stop Bits}& 1\\
-		\hline
-	\end{tabular}
-	\caption{Konfiguracja peryferium USART}
-	\label{tab:USART}
-\end{table}
-
-%Obecne w dokumencie do etapu II oraz III
-\section{Urządzenia zewnętrzne}
-
-Rozdział ten powinien zawierać opis i konfigurację wykorzystanych ukladów
-zewnętrznych, jak np. akcelerometr.
-
-%Obecne w dokumencie do etapu II oraz III
-\subsection{Akcelerometr -- LSM303C}
-
-Akcelerometr został wykorzystany do ...
-
-Konfiguracja rejestrów czujnika została zaprezentowana w ...
-Wpisanie tych wartości do rejestrów urządzenia ... powoduje ...
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{|l|c|} \hline
-		\textbf{Rejestr} & Wartość \\
-		\hline
-		\hline
-		CTRL\_REG2 (0x21) & 0x12\\\hline
-		CTRL\_REG3 (0x22) & 0x13\\\hline
-	\end{tabular}
-	\caption{Konfiguracja peryferium USART}
-	\label{tab:Akcelerometr}
-\end{table}
-
-%Obecne w dokumencie do etapu II oraz III
-\section{Projekt elektroniki}
-	\subsection{Czujniki}
-	\begin{table}[H]
 		\centering
-		\begin{tabular}{|r|l|} \hline
-			\textbf{Wielkość mierzona} & \textbf{Symbol czujnika} \\
+		\begin{tabular}{|r|l|l|} \hline
+			\textbf{Wielkość mierzona} & \textbf{Symbol czujnika} & \textbf{Cena}\\
 			\hline
-			Wilgotność + Temperatura & SHT11/\textbf{30}/31 \\
-			Ciśnienie & Bmp085/\textbf{180} \\
-			Smog & GP2Y1010AU0F \\
-			Dym & MQ-2/\textbf{MQ-9} \\
-			Tlenek węgla (CO) & MQ-7 \\
-			Alkohol & \textbf{MQ-3}/MQ-135 \\
-			Dwutlenek węgla (CO$_2$) & DFRobot SEN219 / MH-Z19 \\
-			Natężenie światła & TSL235R, \textbf{BH1750FVI} \\ \hline
-			Temperatura (opcjonalnie) &	DS18B20 \\ \hline
+			Wilgotność + Temperatura & SHT30 & 69zł \\
+			Ciśnienie & Bmp180 & 32,90zł\\
+			Smog & GP2Y1010AU0F & 50,90zł \\
+			Dym & MQ-9 & 27,99zł \\
+			Tlenek węgla (CO) & MQ-7 & 13,99zł\\
+			Alkohol & MQ-3 & 16,99zł \\
+			Dwutlenek węgla (CO$_2$) & MH-Z19 & 150,56zł\\
+			Natężenie światła & BH1750FVI & 15,99zł\\ 
+			\hline
 		\end{tabular}
 		\caption{Użyte czujniki}
 		\label{tab:Czujniki}
 	\end{table}
-%W przypadku, w którym projekt uwzględnia zastosowanie 
-%dodatkowej elektroniki to wówczas jej opis powinien znaleźć się tutaj.
-%Należy dołączyć schematy elektroniczne w formacie PDF 
-%jako dodatek do dokumentu 
-%za pomocą \textit{include}. Również w przypadku wytworzenia 
-%płytek PCB powinny znaleźć się tutaj ich widoki za zachowaniem skali.
-%Można również dołączyć zdjęcia 
-%elektroniki po uprzednim skompresowaniu, aby wynikowy rozmiar 
-%skompilowanego dokumentu nie był za duży.
 
-%Obecne w dokumencie do etapu II oraz III
-\section{Konstrukcja mechaniczna}
-
-W przypadku, w którym projekt uwzględnia zastosowanie 
-mechaniki to wówczas jej opis powinien znaleźć się tutaj.
-Nie należy dzielić rysunków mechaniki na poszczególne rzuty, 
-wystarczy zamieścić wyrenderowane modele 3D.
-Można również dołączyć zdjęcia wykonanej 
-mechaniki po uprzednim skompresowaniu, aby wynikowy rozmiar 
-skompilowanego dokumentu nie był za duży.
-
-%Obecne w dokumencie do etapu II oraz III
-\section{Opis działania programu}
-
-Należy zawrzeć tutaj opis działania programu.
-Mile widziany diagram prezentujący pracę programu.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/obraz.png}
-	\caption{Diagram przepływu}
-	\label{fig:Program}
-\end{figure}
-
-Sekcję tą można podzielić na dodatkowe podsekcje w miarę potrzeb. 
-Do tego celu nalezy wykorzystać \textit{subsection}.
-
-W przypadku, dodania istotnego fragmentu kodu należy posłużyć się środowiskiem 
-lstlisting:
-
-\begin{lstlisting}[tabsize=2]
-int foo(void){
-return 2;
-}
-\end{lstlisting}
-
-Przykładowy wzór (\ref{eq:Wzor}):
-\begin{equation}
-\label{eq:Wzor}
-\Theta = \int_t^{t+dt} \omega \, dt.	
-\end{equation}
-
-Przykładowa pozycja bibliograficzna \cite{SR01} znajduje się 
-w pliku bibliografia.bib.
-
-%Obecne w dokumencie do etapu I
-\section{Harmonogram pracy}
-
-Należy wstawić diagram Gantta oraz określić ścieżkę 
-krytyczną. Ponadto zaznaczyć i opisać kamienie milowe.
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.5\textwidth]{figures/obraz.png}
-	\caption{Diagram Gantta}
-	\label{fig:DiagramGantta}
-\end{figure}
-
-%Obecne w dokumencie do etapu I
-\subsection{Podział pracy}
-
-\textbf{Każdy z członków grupy powinien w każdym etapie mieć wymienione od 2 do 4 zadań.}
-Przykładowa tabele podziału zadań dla etapu II 
-(Tab. \ref{tab:PodzialPracyEtap2}) oraz dla etapu III 
-(Tab. \ref{tab:PodzialPracyEtap3})
-zostały przedstawione poniżej. 
-Przy podziale prac nie uwzględniamy tworzenia dokumentacji projektu!
-
-Przykładowy podział prac dla projektu pod tytułem 
-"Automatyczny dyktafon rozmowy":
+\begin{description}[font=$\bullet$~\normalfont]
+\item Elektronika - sterownie i komunikacja
+\end{description}
 
 \begin{table}[H]
-	\centering
-	\begin{tabular}{|L{7cm}|L{0.8cm}||L{7cm}|L{0.8cm}|}
-		\hline
-		\hline
-		\textbf{Adam Babacki} & 
-		\% & 
-		\textbf{Bartłomiej Cabacki} & \%\\
-		\hline
-		\hline
-		Wstępna konfiguracja peryferiów w programie CubeMx		& &	
-		Wstępna konfiguracja peryferiów w programie CubeMx &\\
-		\hline
-		Implementacja obsługi mikrofonu & &
-		Opracowanie algorytmu automatycznej detekcji rozmowy &\\
-		\hline
-		Opracowanie sposobu przechowywania danych na zewnętrznej pamięci FLASH & &
-		Oprogramowanie testujące obsługę mikrofonu & \\
-		\hline
-		Odtwarzanie dźwięku za pomocą Audio DAC & & &\\
-		\hline
-	\end{tabular}
-	\caption{Podział pracy -- Etap II}
-	\label{tab:PodzialPracyEtap2}
-\end{table}
+		\centering
+		\begin{tabular}{|r|l|l|} \hline
+			\textbf{Urządzenie} & \textbf{Symbol} & \textbf{Cena}\\
+			\hline
+			Arduino Mega & Arduino MEGA 2560 R3 & 39,99zł \\
+			Moduł sieciowy WiFi & ESP8266 & 16,49zł\\
+			Dioda RGB & LED RGB matowa anoda & 1,40zł \\ \hline
+		\end{tabular}
+		\caption{Moduły sterownia i komunikacji}
+		\label{tab:Sterowanie}
+	\end{table}
+	
+\begin{description}[font=$\bullet$~\normalfont]
+\item Zasoby ludzkie
+\end{description}
 
 \begin{table}[H]
-	\centering
-	\begin{tabular}{|L{7cm}|L{0.8cm}||L{7cm}|L{0.8cm}|}
-		\hline
-		\hline
-		\textbf{Adam Babacki} & 
-		\% & 
-		\textbf{Bartłomiej Cabacki} & \%\\
-		\hline
-		\hline
-		Finalna konfiguracja peryferiów w programie CubeMX		& &	
-		Finalna konfiguracja peryferiów w programie CubeMX &\\
-		\hline
-		Zapisywanie dźwięku na pamięć zewnętrzną FLASH  & &
-		Integracja modułów &\\
-		\hline
-		Obsługa wyświetlacza ciekłokrystalicznego & &
-		Obsługa joysticka & \\
-		\hline
-		 & & Interfejs użytkownika &\\
-		\hline
-	\end{tabular}
-	\caption{Podział pracy -- Etap III}
-	\label{tab:PodzialPracyEtap3}
-\end{table}
+		\centering
+		\begin{tabular}{|r|l|} \hline
+			\textbf{Stanowisko} & \textbf{Roboczo godzina (Brutto)} \\
+			\hline
+			Programista C/C++ & 31,07zł\\
+			Elektronik & 25,06zł\\
+			Specjalista ds. BHP& 19,70zł\\ 
+			Administrator baz danych & 23,81zł\\
+			Administrator Serwera & 29,76zł\\ 
+			\hline
+		\end{tabular}
+		\caption{Zasoby ludzkie}
+		\label{tab:Ludzie}
+	\end{table}
 
-%Obecne w dokumencie do etapu II oraz III (jeśli coś zostało niezrealizowane)
-\section{Zadania niezrealizowane}
+\section{Zarządzanie projektem}
+\textit{\textbf{Zarządzanie projektem (nie więcej niż na pół strony). W jaki sposób będzie zorganizowana koordynacja działań poszczególnych partnerów (określić strukturę zarządzania, mechanizmy monitorowania postępów prac, terminy regularnych spotkań, sposób składowania i wymiany dokumentów roboczych, narzędzia i zasady komunikacji zdalnej, narzędzia i zasady zespołowego rozwoju oprogramowania i tworzenia dokumentów, itd)? Jaki będzie zakres uprawnień koordynatora zespołu? W jaki sposób będą rozwiązywane potencjalne konflikty i według jakich zasad będą podejmowane decyzje? Jakie będą reguły przyznawania praw własności intelektualnej do uzyskanych wyników prac.}}
 
-Jeśli wszystkie zadania zostały realizowane to wówczas 
-ta sekcja powinna być usunięta w całości. W przeciwnym razie
-należy zawrzeć tutaj, jakie zadania zostały nie zrealizowane 
-oraz jaka była tego przyczyna.
-
-%Obecne we wszystkich dokumentach
-\section{Podsumowanie}
-
-Krótkie podsumowanie projektu
-
-\newpage
-\addcontentsline{toc}{section}{Bibilografia}
-\bibliography{bibliografia}
-\bibliographystyle{plabbrv}
+\begin{description}[font=$\bullet$~\normalfont]
+\item Raporty, oddawane podczas oddawania kamieni milowych na spotkaniach, będą nadzorowane poprzez poszczególne osoby odpowiedzialne za dany etap projektu wraz z koordynatorem zespołu.
+\item Zespół projektowy zakłada pracę według metodyki Scrum, dekomponując poszczególne kamienie milowe na mniejsze zadania, które będą wykonywane podczas tzw. sprintów trwających od tygodnia do czterech.
+\item Spotkania zespołu będą odbywać się co tydzień lub dwa, data i miejsce kolejnego zebrania członków zespołu projektowego będzie umawiana podczas spotkań
+\item Dokumentacja oraz aktualne postepy w pracach zespołu projektowego będą udostępniane przy użyciu następujących narzędzi: eportal.pwr.edu.pl, Slack, taiga.io.
+\item Konflikty w zespole będą rozstrzygane przy pomocy mediacji w obecności wszystkich członków. \item Decyzje dotyczące podziału zadań oraz kolejnych przedsięwzięć będą podejmowane wspolnie przez wszystkich członków zespołu.
+\item Prawa własności intelektualnej wytworzonego urządzenia, oraz oprogramowania podzielone zostaną pomiędzy wszystkich członków zespołu, który je wytworzył. W przypadku zakupu i użycia części sponsorowanych przez Politechnika Wrocławska, konkretne podzespoły zostaną przekazane prowadzącemu kurs "Projekt Zespołowy" wraz z końcem semestru.
+\end{description}
 
 
+\section{Zespół}
+\textit{\textbf{Zespół (nie więcej niż na pół strony). Dane koordynatora projektu, lista pozostałych członków zespołu projektowego, odpowiedzialność za poszczególne zadania.}}
+
+\begin{description}[font=$\bullet$~\normalfont]
+\item Koordynator zespołu: Krzysztof Kurnik nr. indeksu: 237603 email: 237603@student.pwr.edu.pl
+\end{description}
+Koordynatorem zespołu projetowego jest opowiedzialny za organizację pracy zespołu, oraz wraz z poszczególnymi członkami zespołu za konkretne etapu powstawania produktu. Poniżej została podana lista członków zespołów wraz z przypsianiem odpowiedzialności za poszczególny etap projektu.
+\begin{description}[font=$\bullet$~\normalfont]
+\item Ergonomia: Paula Langkafel nr. indeksu: 235373 email: 235373@student.pwr.edu.pl
+\item Elektronika: Albert Lis nr. indeksu: 235534 email: 235534@student.pwr.edu.pl
+\item Elektronika/Serwer: Michał Moruń nr. indeksu: 235986 email: 235986@student.pwr.edu.pl
+\item Serwer: Maciej Maruszak nr. indeksu: 235437 email: 235437@student.pwr.edu.pl
+\end{description}
 
 \end{document}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
