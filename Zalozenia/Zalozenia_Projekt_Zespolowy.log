@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.22)  24 MAR 2019 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.3.22)  25 MAR 2019 23:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1285,7 +1285,7 @@ l.74 \newpage
 Missing character: There is no 1 in font nullfont!
 Missing character: There is no 4 in font nullfont!
 
-Overfull \hbox (1.91978pt too wide) in paragraph at lines 205--214
+Overfull \hbox (1.91978pt too wide) in paragraph at lines 206--215
 []  [] 
  []
 
@@ -1294,35 +1294,35 @@ Overfull \hbox (1.91978pt too wide) in paragraph at lines 205--214
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.296 
+l.297 
       pdfTeX warning (ext4): destination with the same identifier (name{table.2
 }) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.296 
+l.297 
       ] [6pdfTeX warning (ext4): destination with the same identifier (name{tab
 le.3}) has been already used, duplicate ignored
 
 \@EveryShipout@Output ...@Org@Shipout \box \@cclv 
                                                   
-l.320 \end{document}
+l.321 \end{document}
                     ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 320.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 320.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
  (./Zalozenia_Projekt_Zespolowy.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 320.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 320.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 321.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
 Package rerunfilecheck Info: File `Zalozenia_Projekt_Zespolowy.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: 9E87851ECBBDFB7B6A168CEF653FCE91;4001.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 320.
+(rerunfilecheck)             Checksum: 7B6D53B93565D100C8B37A55EB9391D5;4407.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
  ) 
 Here is how much of TeX's memory you used:
- 26511 strings out of 492616
- 472634 string characters out of 6128967
+ 26515 strings out of 492616
+ 472714 string characters out of 6128967
  758751 words of memory out of 5000000
- 29885 multiletter control sequences out of 15000+600000
+ 29887 multiletter control sequences out of 15000+600000
  15658 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,9n,67p,625b,791s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1340,10 +1340,10 @@ e/2018/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/
 2018/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/20
 18/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on Zalozenia_Projekt_Zespolowy.pdf (7 pages, 227224 bytes).
+Output written on Zalozenia_Projekt_Zespolowy.pdf (7 pages, 228224 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 197 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 242 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
+ 213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
