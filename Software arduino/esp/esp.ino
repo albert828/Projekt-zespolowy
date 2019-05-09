@@ -5,11 +5,14 @@
 #define KOMPILACJA 0
 #define PRINT_TIME 500
 
+#define RX 9
+#define TX 10
+
 const char* ssid = "Papa Smerf";
 const char* password = "szybkiinternet";
 
 WiFiUDP Udp;
-//SoftwareSerial mySerial = SoftwareSerial(GPIO1, TXD0);
+SoftwareSerial mySerial = SoftwareSerial(RX, TX);
 
 unsigned int localUdpPort = 4210;  // local port to listen on
 char incomingPacket[255];  // buffer for incoming packets
