@@ -5,24 +5,17 @@
 #define KOMPILACJA 0
 #define PRINT_TIME 500
 
-#define RX 9
-#define TX 10
-
 const char* ssid = "Papa Smerf";
 const char* password = "szybkiinternet";
 
 WiFiUDP Udp;
-SoftwareSerial mySerial = SoftwareSerial(RX, TX);
 
 unsigned int localUdpPort = 4210;  // local port to listen on
 char incomingPacket[255];  // buffer for incoming packets
-char  replyPacket[] = "Hi there! Got the message :-)";  // a reply string to send back
-
-
+char recDataUart[255];
 void setup()
 {
   Serial.begin(115200);
-//  mySerial.begin(115200);
   Serial.println();
 
   Serial.printf("Connecting to %s ", ssid);
@@ -40,6 +33,7 @@ void setup()
 
 uint32_t actualTime, previousTime;
 uint16_t counter = 0;
+uint8_t i = 0;
 void loop()
 {
   #if KOMPILACJA == 1
@@ -75,11 +69,14 @@ void loop()
   
   if(Serial.available() > 0)
   {
-    Serial.println(Serial.read());
-    Udp.beginPacket("192.168.137.1", 5005);
-    Udp.write("Resending by ESP : ");
+    recDataUart[i] = (char)Serial.read();
+    Serial.print(*recDataUart);
+    //++i;
+    (recDataUart[i] == '\n') ? i = 0 : ++i;
+    //Serial.println("Test");
+    //Udp.beginPacket("192.168.137.1", 5005);
+    //Udp.write("Resending by ESP : ");
     //Udp.write(Serial.read());
-    Udp.endPacket();
+    //Udp.endPacket();
   }
-  
 }

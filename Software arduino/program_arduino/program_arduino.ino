@@ -30,5 +30,5 @@ void loop() {
     ++values[7]; values[8] %= 10;
     values[8] += 50; values[8] %= 2000;
   }
-  delay(10000);
+  delay(1000);
 }
