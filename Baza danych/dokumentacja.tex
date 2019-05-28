@@ -1,0 +1,151 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = pl_PL
+
+% $Id:$
+
+%Author: Wojciech Domski
+%Szablon do ząłożeń projektowych, raportu i dokumentacji z steorwników robotów
+%Wersja v.1.0.0
+%
+
+
+%% Konfiguracja:
+\newcommand{\kurs}{Projekt zespołowy}
+\newcommand{\formakursu}{Projekt}
+
+%odkomentuj właściwy typ projektu, a pozostałe zostaw zakomentowane
+%\newcommand{\doctype}{Za\l{}o\.{z}enia projektowe} %etap I
+%\newcommand{\doctype}{Raport} %etap II
+\newcommand{\doctype}{Dokumentacja} %etap III
+
+%wpisz nazwę projektu
+\newcommand{\projectname}{Baza danych}
+
+%wpisz akronim projektu
+%\newcommand{\acronim}{Mikruś}
+
+%wpisz Imię i nazwisko oraz numer albumu
+\newcommand{\osobaA}{Albert \textsc{Lis}, 235534}
+%w przypadku projektu jednoosobowego usuń zawartość nowej komendy
+%\newcommand{\osobaB}{Bart\l{}omiej \textsc{Cabacki}, 123457}
+
+%wpisz termin w formie, jak poniżej dzień, parzystość, godzina
+%\newcommand{\termin}{Śr 13:05}
+
+%wpisz imię i nazwisko prowadzącego
+%\newcommand{\prowadzacy}{drr in\.{z}. Paweł \textsc{Drąg}}
+
+\documentclass[10pt, a4paper]{article}
+
+\include{preambula}
+	
+\begin{document}
+
+\def\tablename{Tabela}	%zmienienie nazwy tabel z Tablica na Tabela
+
+\begin{titlepage}
+	\begin{center}
+		\textsc{\LARGE \formakursu}\\[1cm]		
+		\textsc{\Large \kurs}\\[0.5cm]		
+		\rule{\textwidth}{0.08cm}\\[0.4cm]
+		{\huge \bfseries \doctype}\\[1cm]
+		{\huge \bfseries \projectname}\\[0.5cm]
+	%	{\huge \bfseries \acronim}\\[0.4cm]
+		\rule{\textwidth}{0.08cm}\\[1cm]
+		
+		\begin{flushright} \large
+%		\emph{Skład grupy:}\\
+		\osobaA\\[0.4cm]
+
+		
+%		\emph{Termin: }\termin\\[0.4cm]
+
+%		\emph{Prowadzący:} \\
+%		\prowadzacy \\
+		
+		\end{flushright}
+		
+		\vfill
+		
+		{\large \today}
+	\end{center}	
+\end{titlepage}
+
+\newpage
+%\tableofcontents
+
+\section{Struktura bazy danych}
+	Baza stworzona w języku MySQL. Posiada 4 tabele:
+	\begin{enumerate}
+		\item measurements
+		\newline
+		Tabela główna posiada informację na temat pomiarów oraz dat.
+		
+		\item rooms
+		\newline
+		Tabela przechowująca informację na temat pokojów w których zostały dokonane pomiary.
+		
+		\item sensors
+		\newline
+		Tabela przechowująca informację na temat czujników.
+	\end{enumerate}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{figures/diag1.png}
+	\caption{Architektura bazy danych}
+	\label{fig:ArchitekturaBD2}
+\end{figure}
+
+%Obecne w dokumencie do etapu II oraz III
+\section{Komunikacja między sterownikiem a bazą danych}
+Do tego zadania został wykorzystany program napisany w języku Python w oparciu o bibliotekę: mysql connector \cite{mysql} oraz port szeregowy do komunikacji między sterownikiem a PC. Docelowo komunikacja będzie prowadzona przez UDP i moduł sieciowy.
+
+\begin{thebibliography}{9}
+	
+	\bibitem{mysql}
+	\href{https://dev.mysql.com/doc/connector-python/en/}{Biblioteka MySQL dla języka Python}
+	
+\end{thebibliography}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
