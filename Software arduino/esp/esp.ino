@@ -10,7 +10,6 @@ const char* password = "szybkiinternet";
 
 WiFiUDP Udp;
 
-unsigned int localUdpPort = 4210;  // local port to listen on
 char incomingPacket[255];  // buffer for incoming packets
 char recDataUart[255];
 void setup()
@@ -26,9 +25,6 @@ void setup()
     Serial.print(".");
   }
   Serial.println(" connected");
-
-  Udp.begin(localUdpPort);
-  Serial.printf("Now listening at IP %s, UDP port %d\n", WiFi.localIP().toString().c_str(), localUdpPort);
 }
 
 uint32_t actualTime, previousTime;
@@ -69,11 +65,20 @@ void loop()
   
   if(Serial.available() > 0)
   {
-    recDataUart[i] = (char)Serial.read();
-    Serial.print(*recDataUart);
+    recDataUart[i] = Serial.read();
     //++i;
-    (recDataUart[i] == '\n') ? i = 0 : ++i;
-    //Serial.println("Test");
+    if (recDataUart[i] == '\n') 
+    {
+      ++i;
+      recDataUart[i] = '\0';
+      i = 0;
+      Serial.print(recDataUart);
+      Udp.beginPacket("192.168.137.1", 5005);
+      Udp.write(recDataUart);
+      Udp.endPacket();
+    }
+    else
+      ++i;
     //Udp.beginPacket("192.168.137.1", 5005);
     //Udp.write("Resending by ESP : ");
     //Udp.write(Serial.read());
