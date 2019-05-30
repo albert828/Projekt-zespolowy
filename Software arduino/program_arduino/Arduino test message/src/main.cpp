@@ -2,10 +2,10 @@
 
 #define NR_ROOMS 4
 #define NR_SENSORS 9
-const char *rooms[NR_ROOMS] = {"Pokoj ", "Kuchnia ", "Lazienka ", "Przedpokoj "};
-const char *sensors[NR_SENSORS] = {"Temperatura ", "Cisnienie ", "Smog ", "CO2 ", "Wilgotnosc ", "Alkohol ",
-                          "Halas ", "Dym ", "Swiatlo "};
-const char *command[2] = {"Za malo", "Za duzo"}; 
+const char *rooms[NR_ROOMS] = {"Pokój ", "Kuchnia ", "Łazienka ", "Przedpokój "};
+const char *sensors[NR_SENSORS] = {"Temperatura ", "Ciśnienie ", "Smog ", "CO2 ", "Wilgotność ", "Alkohol ",
+                          "Hałas ", "Dym ", "Światło "};
+const char *command[2] = {"Za mało", "Za dużo"}; 
 uint16_t values[9];
 
 void setup() {

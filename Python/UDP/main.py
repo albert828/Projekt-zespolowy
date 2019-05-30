@@ -9,4 +9,5 @@ sock.bind((IP_R, PORT_R))
 while True:
     data, adrr = sock.recvfrom(128)
     data = data[:-2]
+    data = data.decode('utf-8')
     print(data)
