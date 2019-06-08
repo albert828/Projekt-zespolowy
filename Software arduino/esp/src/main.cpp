@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 //monitor_speed = 115200
-const char* ssid = "Papa Smerf", *password = "szybkiinternet";
+const char* ssid = "CBA", *password = "szybkiinternet";
 WiFiUDP Udp;
 char recDataUart[255];
 
@@ -30,7 +30,7 @@ void loop()
       recDataUart[i] = '\0';
       i = 0;
       Serial.print(recDataUart);
-      Udp.beginPacket("192.168.137.1", 5005);
+      Udp.beginPacket("raspoka.ddns.net", 32998);
       Udp.write(recDataUart);
       Udp.endPacket();
     }
