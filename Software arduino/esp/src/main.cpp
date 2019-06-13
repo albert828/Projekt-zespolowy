@@ -1,10 +1,31 @@
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 //monitor_speed = 115200
-const char* ssid = "CBA", *password = "szybkiinternet";
+/**
+ * @brief Contains WiFi name
+ * 
+ */
+const char* ssid = "CBA";
+/**
+ * @brief Contains WiFi password
+ * 
+ */
+const char *password = "szybkiinternet";
+/**
+ * @brief Wifi comunication object
+ * 
+ */
 WiFiUDP Udp;
+/**
+ * @brief Buffer for recived data from serial port
+ * 
+ */
 char recDataUart[255];
-
+/**
+ * @brief Setup function. Starts serial cominication. Starts WiFi comunication.
+          Waits for correct conection with WiFi network
+ * 
+ */
 void setup()
 {
   Serial.begin(115200);
@@ -17,8 +38,15 @@ void setup()
   }
   Serial.println(" connected");
 }
-
+/**
+ * @brief Contains numer of received characters from serial port
+ * 
+ */
 uint8_t i = 0;
+/**
+ * @brief Main function. Reads data from serial port and resends it via UDP.
+ * 
+ */
 void loop()
 { 
   if(Serial.available() > 0)
