@@ -1,0 +1,4 @@
+\babel@toc {polish}{}
+\contentsline {section}{\numberline {1}Baza danych}{2}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Struktura}{2}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Opis}{2}{subsection.1.2}% 

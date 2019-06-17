@@ -1,0 +1,128 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = pl_PL
+
+% $Id:$
+
+%Author: Wojciech Domski
+%Szablon do ząłożeń projektowych, raportu i dokumentacji z steorwników robotów
+%Wersja v.1.0.0
+%
+
+
+%% Konfiguracja:
+\newcommand{\kurs}{Projekt zespołowy}
+\newcommand{\formakursu}{Projekt}
+
+%odkomentuj właściwy typ projektu, a pozostałe zostaw zakomentowane
+%\newcommand{\doctype}{Za\l{}o\.{z}enia projektowe} %etap I
+%\newcommand{\doctype}{Raport} %etap II
+\newcommand{\doctype}{Dokumentacja} %etap III
+
+%wpisz nazwę projektu
+\newcommand{\projectname}{Urządzenie badające mikroklimat w pomieszczeniach}
+
+%wpisz akronim projektu
+%\newcommand{\acronim}{Mikruś}
+
+%wpisz Imię i nazwisko oraz numer albumu
+%\newcommand{\osobaA}{Albert \textsc{Lis}, 235534}
+%w przypadku projektu jednoosobowego usuń zawartość nowej komendy
+%\newcommand{\osobaB}{Bart\l{}omiej \textsc{Cabacki}, 123457}
+
+%wpisz termin w formie, jak poniżej dzień, parzystość, godzina
+%\newcommand{\termin}{Śr 13:05}
+
+%wpisz imię i nazwisko prowadzącego
+%\newcommand{\prowadzacy}{dr in\.{z}. Paweł \textsc{Drąg}}
+
+\documentclass[10pt, a4paper]{article}
+
+\include{preambula}
+
+	
+\begin{document}
+
+\def\tablename{Tabela}	%zmienienie nazwy tabel z Tablica na Tabela
+
+\begin{titlepage}
+	\begin{center}
+		\textsc{\LARGE \formakursu}\\[1cm]		
+		\textsc{\Large \kurs}\\[0.5cm]		
+		\rule{\textwidth}{0.08cm}\\[0.4cm]
+		{\huge \bfseries \doctype}\\[1cm]
+		{\huge \bfseries \projectname}\\[0.5cm]
+%		{\huge \bfseries \acronim}\\[0.4cm]
+		\rule{\textwidth}{0.08cm}\\[1cm]
+		
+		\begin{flushright} \large
+	%	\emph{Skład grupy:}\\
+%		\osobaA\\[0.4cm]
+
+		
+%		\emph{Termin: }\termin\\[0.4cm]
+
+%		\emph{Prowadzący:} \\
+%		\prowadzacy \\
+		
+		\end{flushright}
+		
+		\vfill
+		
+		{\large \today}
+	\end{center}	
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+\section{Baza danych}
+	\subsection{Struktura}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.8\textwidth]{figures/struktura.png}
+			\caption{Struktura bazy danych}
+			\label{fig:struktura}
+		\end{figure}
+	\subsection{Opis}
+	Na rysunku \pageref{fig:struktura} została przedstawiona schematycznie struktura bazy danych. W tabeli sensors przechowujemy nazwę oraz id czujnika. W tabeli głównej measurement przechowujemy wartości pomiarów, daty oraz id pomieszczeń i czujników. Tabela rooms przechowuje nazwy i id pomieszczeń oraz aktualne komunikaty dla użytkownika. Komunikaty zostały rozdzielone według czujników.
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
