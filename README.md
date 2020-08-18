@@ -8,7 +8,8 @@
 * [Features](#features)
 * [Design assumptions](#design-assumptions) 
 * [Status](#status)
-* [Contributors](#contact)
+* [Contact](#contact)
+* [Contributors](#contributors)
 
 ## General info
 This program was created as academic project in the Team project subject. The point was to create a device tham measures current environmental measurements and after processing it, gives advices on improving the quality of work.
@@ -47,5 +48,5 @@ Project is: _finished_
 ## Contact
 albert.lis.1996@gmail.com - feel free to contact me!
 
-## Constributors
+## Contributors
 [Albert Lis](https://github.com/albertlis) [kurniak](https://github.com/kurniak) [MichalMorun](https://github.com/MichalMorun) [plangkafel](https://github.com/plangkafel)
