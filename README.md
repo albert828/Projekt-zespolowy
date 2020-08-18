@@ -44,5 +44,8 @@ Check [design assumptions](./Documents/Design%20assumptions/Zalozenia_Projekt_Ze
 ## Status
 Project is: _finished_
 
+## Contact
+albert.lis.1996@gmail.com - feel free to contact me!
+
 ## Constributors
 [Albert Lis](https://github.com/albertlis) [kurniak](https://github.com/kurniak) [MichalMorun](https://github.com/MichalMorun) [plangkafel](https://github.com/plangkafel)
